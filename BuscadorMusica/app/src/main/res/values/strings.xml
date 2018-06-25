@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Buscador de música</string>
+    <string name="login">Login</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="genero">Genero:</string>
+    <string name="popularidad">Popularidad:</string>
+    <string name="CLIENT_ID">29a3f60d38764c2d9b036e2b810594da</string>
+    <string name="REDIRECT_URI">mimusica://callback</string>
+    <string name="imagen">Imagen</string>
+</resources>

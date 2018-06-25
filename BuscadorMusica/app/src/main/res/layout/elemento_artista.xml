@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#FFF"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <ImageView
+                    android:id="@+id/imagenArtista"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/imagen" />
+
+                <TextView
+                    android:id="@+id/nombreArtista"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="20sp"
+                    android:layout_margin="8dp"
+
+                    android:shadowColor="@color/cardview_dark_background"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="1"
+                    />
+            </RelativeLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+                <TableRow>
+                    <TextView
+                        android:textColor="#000"
+                        android:text="@string/genero"/>
+                    <TextView
+                        android:textColor="#000"
+                        android:id="@+id/generoArtista"
+
+                        android:ellipsize="end"
+                        android:maxLines="1"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:textColor="#000"
+                        android:text="@string/popularidad"/>
+                    <TextView
+                        android:textColor="#000"
+                        android:id="@+id/popularidadArtista"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

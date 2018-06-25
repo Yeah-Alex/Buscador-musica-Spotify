@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="?attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/numeroTrack"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/nombreTrack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/icono"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_play_circle_filled_white_24dp_2x"
+            android:contentDescription="@string/imagen" />
+
+    </LinearLayout>
+
